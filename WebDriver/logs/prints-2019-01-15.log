@@ -1,0 +1,5 @@
+11:27:57.851 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User is at checbox demo page
+11:27:58.059 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - clicked on first checkbox in checkbox page
+11:27:58.059 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User clicked first checkbox
+11:27:58.100 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User verified the message: Success - Check box is checked
+23:23:04.992 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application

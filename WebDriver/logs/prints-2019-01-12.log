@@ -1,0 +1,5 @@
+16:52:04.748 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User verified the message: Success - Check box is checked
+16:58:33.647 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application
+11:27:50.018 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application
+11:27:53.401 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - Input form header selected
+11:27:57.733 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - checkbox demo selected from header list

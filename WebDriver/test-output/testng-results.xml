@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="53900" started-at="2019-02-17T14:55:23Z" finished-at="2019-02-17T14:56:17Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="CustomAbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6e1ec318]" name="feature" class="customrunner.CustomAbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="53900" started-at="2019-02-17T14:55:23Z" finished-at="2019-02-17T14:56:17Z">
+      <class name="runner.Runner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runner.Runner@6e1ec318]" name="setUpClass" is-config="true" duration-ms="714" started-at="2019-02-17T20:25:23Z" finished-at="2019-02-17T20:25:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:runner.Runner@6e1ec318]" name="feature" duration-ms="52679" started-at="2019-02-17T20:25:24Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-02-17T20:26:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[As a user, I should be able to select dropdown item from list page]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runner.Runner@6e1ec318]" name="tearDownClass" is-config="true" duration-ms="88" started-at="2019-02-17T20:26:17Z" finished-at="2019-02-17T20:26:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.Runner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

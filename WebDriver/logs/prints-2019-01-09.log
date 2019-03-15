@@ -1,0 +1,6 @@
+16:51:59.005 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application
+16:52:00.384 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - Input form header selected
+16:52:04.369 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - checkbox demo selected from header list
+16:52:04.487 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User is at checbox demo page
+16:52:04.573 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - clicked on first checkbox in checkbox page
+16:52:04.574 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User clicked first checkbox

@@ -1,0 +1,6 @@
+20:15:13.653 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application
+20:15:13.817 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - Input form header selected
+20:15:16.180 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - Dropdown list selected from header list
+20:15:16.227 [main] DEBUG stepDefinations.CheckboxDemoStepDef - User is at Dropdown page
+20:15:16.500 [main] DEBUG stepDefinations.SimpleFormDemoStepDef - selected item from list : Monday
+19:49:48.594 [main] INFO  stepDefinations.CheckboxDemoStepDef - User has launched application
