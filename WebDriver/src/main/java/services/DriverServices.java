@@ -25,6 +25,15 @@ public class DriverServices implements Closeable {
 	
 	private WebDriver driver;
 	private BrowserConfiguration browserConfiguration;
+	private CustomChromeDriver chromeDriver;
+	private BrowserHelper browserHelper;
+	private ButtonHelper buttonHelper;
+	private WindowHelper windowHelper;
+	private AlertHelper alertHelper;
+	private TextBoxHelper textBoxHelper; 
+	private DropdownHelper dropDownHelper;
+	private GenericHelper genericHelper;
+	private IReader reader;
 	
 	public BrowserConfiguration getBrowserConfiguration() {
 		return browserConfiguration;
@@ -54,22 +63,10 @@ public class DriverServices implements Closeable {
 		return alertHelper;
 	}
 
-	private CustomChromeDriver chromeDriver;
-	private BrowserHelper browserHelper;
-	private ButtonHelper buttonHelper;
-	private WindowHelper windowHelper;
-	private AlertHelper alertHelper;
-	private TextBoxHelper textBoxHelper; 
-	private DropdownHelper dropDownHelper;
-	private GenericHelper genericHelper;
 	public GenericHelper getGenericHelper() {
 		return genericHelper;
 	}
 
-	private IReader reader;
-	
-	
-	
 	public IReader getReader() {
 		return reader;
 	}
