@@ -20,7 +20,7 @@ public class AlertHelper {
 	public static AlertHelper getInstance(WebDriver driver){
 		if(alertHelper == null || wdDrvier.hashCode() != driver.hashCode())
 			alertHelper = new AlertHelper(driver);
-		return alertHelper;
+		return alertHelper; 
 	}
 	
 	
