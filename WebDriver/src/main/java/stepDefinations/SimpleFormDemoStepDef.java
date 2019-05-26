@@ -50,9 +50,9 @@ public class SimpleFormDemoStepDef {
 	
 	@Given("^User is in Simple Form Demo Page$")
 	public void user_is_in_Simple_Form_Demo_Page() throws Throwable {		
-		testSettings.homepage.clickStartPractiseBtn();
+		testSettings.home_page.clickStartPractiseBtn();
 		Thread.sleep(2000);
-		testSettings.simple_page = (SimpleFormPage) testSettings.homepage.clickSimpleFormDemo();
+		testSettings.simple_page = (SimpleFormPage) testSettings.home_page.clickSimpleFormDemo();
 		logs.info("User is in Simple Form Demo Page");
 	}
 

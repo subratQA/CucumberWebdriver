@@ -21,7 +21,7 @@ public class RadioButtonStepDef {
 	private DriverServices services;
 	private TestSettings testSettings;
 	private static TextBoxHelper headerText;
-	private static Logger logs = LogManager.getLogger(SimpleFormDemoStepDef.class.getName());
+	private static Logger logs = LogManager.getLogger(RadioButtonStepDef.class.getName());
 
 	
 	public RadioButtonStepDef(DriverServices services, TestSettings testSettings) {
@@ -32,9 +32,9 @@ public class RadioButtonStepDef {
 	
 	@Given("^User is in Radio Button Demo Page$")
 	public void user_is_in_Radio_Button_Demo_Page() throws Throwable {
-		testSettings.homepage.clickStartPractiseBtn();
+		testSettings.home_page.clickStartPractiseBtn();
 		Thread.sleep(2000);
-	    testSettings.radio_page =  (RadioButtonsDemoPage) testSettings.homepage.selectRadioFromInputForm();
+	    testSettings.radio_page =  (RadioButtonsDemoPage) testSettings.home_page.selectRadioFromInputForm();
 	    logs.info("User is in Radio Button Demo Page");
 	}
 

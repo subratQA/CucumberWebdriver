@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 
+import cucumber.api.Scenario;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -17,7 +18,7 @@ public class DropdownStepDef {
 	private WebDriver driver;
 	private DriverServices dfnservices;
 	private TestSettings dfntestSettings;
-	private static Logger logs = LogManager.getLogger(CheckboxDemoStepDef.class.getName());
+	private static Logger logs = LogManager.getLogger(DropdownStepDef.class.getName());
 	
 	public DropdownStepDef(DriverServices services, TestSettings testSettings) {
 		this.dfnservices = services;
@@ -27,8 +28,9 @@ public class DropdownStepDef {
 	
 	@Given("^User is in Dropdown Page$")
 	public void user_is_in_Dropdown_Page() throws Throwable {
-		dfntestSettings.dropdown_page = (DropdownPage) dfntestSettings.homepage.selectDropdownFromInputForm();
+		dfntestSettings.dropdown_page = (DropdownPage) dfntestSettings.home_page.selectDropdownFromInputForm();
 		logs.debug("User is at Dropdown page");
+		logs.debug(Scenario.class.getName());
 	}
 
 	@And("^User selects \"([^\"]*)\" from Select a Day Dropdown$")
@@ -38,8 +40,8 @@ public class DropdownStepDef {
 	}
 
 	@Then("^User verifies message displayed \"([^\"]*)\" for Select List Demo$")
-	public void user_verifies_message_displayed_for_Select_List_Demo(String arg1) throws Throwable {
-
+	public void user_verifies_message_displayed_for_Select_List_Demo(String textMessgae) throws Throwable {
+		dfntestSettings.dropdown_page.getTextMessageCompared(textMessgae);
 	}
 
 }

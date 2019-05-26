@@ -9,10 +9,10 @@ import pages.SimpleFormPage;
 
 public class TestSettings {
 	
-	public HomePage homepage;
+	public HomePage home_page;
 	public CheckboxDemoPage checkbox_page;
 	public DropdownPage dropdown_page;
-	public PageBase pagebase;
+	public PageBase page_base;
 	public RadioButtonsDemoPage radio_page;
 	public SimpleFormPage simple_page;
 	public String data = "";

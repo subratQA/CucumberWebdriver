@@ -30,7 +30,7 @@
 					</execution>
 				</executions>
 				<configuration>
-<!-- 					<systemPropertyVariables>
+<!-- 				<systemPropertyVariables>
 						<IsGridSetup>${is.grid}</IsGridSetup>
 						<HubUrl>${hub.url}</HubUrl>
 						<FeatureName>${feature.name}</FeatureName>

@@ -16,37 +16,37 @@ public class CheckboxDemoStepDef {
 
 	private WebDriver driver;
 	private DriverServices services;
-	private TestSettings testSettings;
+	private TestSettings deftestSettings;
 	private static Logger logs = LogManager.getLogger(CheckboxDemoStepDef.class.getName());
 
 	
 	public CheckboxDemoStepDef(DriverServices services, TestSettings testSettings) {
 		this.services = services;
 		this.driver = services.getDriver();
-		this.testSettings = testSettings;
+		this.deftestSettings = testSettings;
 	}
 	
-	@Given("^User launches the application$")
+/*	@Given("^User launches the application$")
 	public void user_launches_the_application() throws Throwable {
 		driver.get(services.getReader().getApplicationUrl());
-		testSettings.homepage = new HomePage(driver);
+		deftestSettings.homepage = new HomePage(driver);
 		logs.info("User has launched application");
-	}
+	}*/
 	@Given("^User is in Checkbox Demo Page$")
 	public void user_is_in_Checkbox_Demo_Page() throws Throwable {
-		testSettings.checkbox_page = (CheckboxDemoPage) testSettings.homepage.selectCheckboxFromInputForm();
+		deftestSettings.checkbox_page = (CheckboxDemoPage) deftestSettings.home_page.selectCheckboxFromInputForm();
 		logs.debug("User is at checbox demo page");
 	}
 
 	@Given("^User selects Click on this check box field$")
 	public void user_selects_Click_on_this_check_box_field() throws Throwable {
-		testSettings.checkbox_page.clickFirstCheckbox();
+		deftestSettings.checkbox_page.clickFirstCheckbox();
 		logs.debug("User clicked first checkbox");
 	}
 
 	@Then("^User verifies message displayed \"([^\"]*)\"$")
 	public void user_verifies_message_displayed(String message) throws Throwable {
-		testSettings.checkbox_page.getCheckboxMessage(message);
+		deftestSettings.checkbox_page.getCheckboxMessage(message);
 		logs.debug("User verified the message: "+message);
 	}
 

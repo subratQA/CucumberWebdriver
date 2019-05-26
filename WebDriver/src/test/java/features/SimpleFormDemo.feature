@@ -1,6 +1,6 @@
 Feature: As a user, I should be able to enter the values in Simple form demo page
 
-@smoke
+@smoke1
 Scenario: Enter text box field
 
 	Given User launches the application
